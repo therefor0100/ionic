@@ -1,0 +1,68 @@
+<ion-view title='食物派' controller=''>
+	<ion-content class='content'>
+		<h3 class="home">查询食物信息</h3>
+		<div class="list list-inset">
+		  <label class="item item-input">
+		    <i class="icon ion-search placeholder-icon"></i>
+		    <input type="text" placeholder="请输入食物信息">
+		  </label>
+		</div>
+
+		<div class="sort">
+			<ul>
+				<li>
+					<icon class='ion-android-list'></icon>
+					<p>饮食分析</p>
+				</li>
+				<li>
+					<icon class='ion-ios-book'></icon>
+					<p>搜索对比</p>
+				</li>
+				<li>
+					<icon class='ion-ios-analytics'></icon>
+					<p>扫码对比</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="sort1">
+			<p class="tit1">食物分类</p>
+			<div class="con1">
+				<ul>
+					<li ng-repeat='x in arr'>
+						<i class="iconfont">&#xe600;</i>
+						<p>{{x.name}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sort1">
+			<p class="tit1">热门品牌</p>
+			<div class="con1">
+				<ul>
+					<li ng-repeat='x in arr'>
+						<i class="iconfont">&#xe600;</i>
+						<p>{{x.name}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sort1">
+			<p class="tit1">连锁产业</p>
+			<div class="con1">
+				<ul>
+					<li ng-repeat='x in arr'>
+						<i class="iconfont">&#xe600;</i>
+						<p>{{x.name}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</ion-content>
+	
+</ion-view>

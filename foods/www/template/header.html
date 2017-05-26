@@ -1,0 +1,23 @@
+<ion-view title='逛吃'>
+
+	<ion-content>
+
+		<div class="first">
+			
+			<ion-item ng-repeat='x in list1' href="#/tab/about/header/{{$index}}" class='dl'>
+				<dt><img src="{{x.img}}" alt="" /></dt>
+				<dd class="tit">{{x.tit}}</dd>
+				<dd class="border">
+					<span class="tou"><img src="{{x.tou}}" alt="" />{{x.name}}</span>
+					
+					<i class="num">
+						<i class="iconfont">&#xe602;</i>
+						{{x.num}}
+					</i>
+				</dd>
+			</ion-item>
+		</div>
+	</ion-content>
+	
+	
+</ion-view>
